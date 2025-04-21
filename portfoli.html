@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio de Nada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      header,
+      footer {
+        background-color: #f8f8f8;
+        padding: 20px;
+        text-align: center;
+      }
+      nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- En-tête -->
+    <header>
+      <h1>Bienvenue sur mon portfolio !</h1>
+      <nav>
+        <a href="#Acceuil">Acceuil</a>
+        <a href="#about">À propos</a>
+        <a href="#resumé">Resumé</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Section À propos -->
+    <section id="about">
+      <h2>À propos de moi</h2>
+      <p>
+        Je suis Nada, développeuse web passionnée par la création d’expériences
+        utilisateurs intuitives et modernes.
+      </p>
+      <ul>
+        <li>Compétences : HTML, CSS, JavaScript</li>
+        <li>Langues : Français, Anglais</li>
+        <li>Loisirs : Musique, randonnée, photographie</li>
+      </ul>
+    </section>
+
+    <!-- Section Projets avec tableau -->
+    <section id="resume">
+      <h2>Mes Projets</h2>
+      <table border="1">
+        <tr>
+          <th>Nom du projet</th>
+          <th>Description</th>
+          <th>Année</th>
+        </tr>
+        <tr>
+          <td>Site de recettes</td>
+          <td>Un site interactif avec des recettes triées par ingrédients.</td>
+          <td>2024</td>
+        </tr>
+        <tr>
+          <td>Blog photo</td>
+          <td>Un blog personnel avec mes voyages et mes photos.</td>
+          <td>2023</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Section Médias (vidéo/audio) -->
+    <section id="media">
+      <h2>Mes Médias</h2>
+      <p>Voici une petite vidéo que j'ai réalisée :</p>
+
+      <iframe
+        width="350"
+        height="315"
+        src="https://www.youtube.com/embed/GxmfcnU3feo?si=kuxBBoJDTcjaAmkL"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+
+      <p>Et une musique que j'aime écouter en codant :</p>
+      <audio controls>
+        <source src="medias/musique.mp3" type="audio/mpeg" />
+        Votre navigateur ne supporte pas l'audio.
+      </audio>
+    </section>
+
+    <!-- Section Contact avec formulaire -->
+    <section id="contact">
+      <h2>Contactez-moi</h2>
+      <form action="formulaire.php" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required /><br /><br />
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Message :</label><br />
+        <textarea id="message" name="message" rows="5" cols="40"></textarea
+        ><br /><br />
+
+        <input type="submit" value="Envoyer" />
+      </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+      <p>&copy; 2025 Nada - Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
